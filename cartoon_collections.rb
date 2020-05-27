@@ -1,5 +1,11 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves (collection)
+	 i = 0
+   block_return_values = []
+	 while i < collection.length
+	 block_return_values << yield(collection[i])
+   i += 1
+	 end
+	puts block_return_values
 end
 
 def summon_captain_planet# code an argument here
